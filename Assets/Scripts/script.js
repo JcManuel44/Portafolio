@@ -110,13 +110,10 @@ function shuffleArray(array) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
-    console.log('Array mezclado:', array); 
     return array;
 }
 
-console.log('Tarjetas antes de mezclar:', cardArray);
 const shuffledCards = shuffleArray(cardArray);
-console.log('Tarjetas después de mezclar:', shuffledCards);
 
 shuffledCards.forEach(card => {
     container.appendChild(card);
@@ -148,7 +145,7 @@ function dragLeave(event) {
 }
 
 function cargarFrases() {
-    return fetch('../../Json/frases.json')
+    return fetch('https://jcmanuel44.github.io/Portafolio/Json/frases.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('No se pudo cargar el archivo JSON');
@@ -173,9 +170,6 @@ async function checkOrder() {
         const cards = container.querySelectorAll('.card-skills'); 
         const originalOrder = Array.from({ length: cards.length }, (_, index) => index);
         const currentOrder = Array.from(cards).map(card => parseInt(card.dataset.index));
-
-        console.log('Orden original:', originalOrder);
-        console.log('Orden actual:', currentOrder);
 
         let correctOrder = JSON.stringify(originalOrder) === JSON.stringify(currentOrder);
 

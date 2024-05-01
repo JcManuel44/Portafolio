@@ -27,6 +27,7 @@ function enviarMensaje() {
             txt_mensaje: txt_mensaje
          }).then(function (response) {
             alert('Mensaje enviado correctamente');
+            console.error('Mensaje enviado correctamente');
 
             // Limpiar los campos después de enviar el mensaje
             document.getElementById('id_txt_nombre').value = '';

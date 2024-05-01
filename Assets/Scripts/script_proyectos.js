@@ -5,7 +5,7 @@ document.getElementById('boton-descargar-cv').addEventListener('click', function
 
 
 function openModal(projectId) {
-    fetch('../../Json/Tecnologias.json')
+    fetch('https://jcmanuel44.github.io/Portafolio/Json/Tecnologias.json')
         .then(response => response.json())
         .then(data => {
             const project = data.find(p => p.Id === projectId);

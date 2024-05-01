@@ -2,23 +2,23 @@
     "documentos": [
         {
             "id": "1",
-            "ruta": "https://jcmanuel44.github.io/Portafolio/Pdf/Proyecto_Publico.pdf"
+            "ruta": "https://jcmanuel44.github.io/Portafolio/Pdf/Proyecto_Publico1.pdf"
         },
         {
             "id": "2",
-            "ruta": "https://jcmanuel44.github.io/Portafolio/Pdf/_2_Proyecto_Publico.pdf"
+            "ruta": "https://jcmanuel44.github.io/Portafolio/Pdf/Proyecto_Publico2.pdf"
         },
         {
             "id": "3",
-            "ruta": "https://jcmanuel44.github.io/Portafolio/Pdf/_3_Proyecto_Publico.pdf"
+            "ruta": "https://jcmanuel44.github.io/Portafolio/Pdf/Proyecto_Publico3.pdf"
         },
         {
             "id": "4",
-            "ruta": "https://jcmanuel44.github.io/Portafolio/Pdf/_4_Proyecto_Publico.pdf"
+            "ruta": "https://jcmanuel44.github.io/Portafolio/Pdf/Proyecto_Publico4.pdf"
         },
         {
             "id": "5",
-            "ruta": "https://jcmanuel44.github.io/Portafolio/Pdf/_1_Proyecto_Privado.pdf"
+            "ruta": "https://jcmanuel44.github.io/Portafolio/Pdf/Proyecto_Privado1.pdf"
         }
     ]
 }

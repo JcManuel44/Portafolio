@@ -1,0 +1,132 @@
+[
+    {
+        "Id": 1,
+        "titulo": "Proyecto A",
+        "descripcion": "Esta página es una de las 4 páginas públicas que él desarrolló, utilizando frontend y backend. Todas funcionan con una base de datos, lo que permite distinguir entre roles públicos y privados. La que estás viendo es la página pública; además, existe otra página destinada a la gestión de datos que se encarga de visualizar dinámicamente la información en la página pública.",
+        "tecnologias": {
+            "frontend": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Bootstrap."
+            ],
+            "backend": [
+                "PHP",
+                "MVC",
+                "POO",
+                "jQuery",
+                "Ajax."
+            ],
+            "base_de_datos": [
+                "MySQL",
+                "Normalización 3° FN",
+                "Procedimientos Almacenados."
+            ]
+        }
+    },
+    {
+        "Id": 2,
+        "titulo": "Proyecto B",
+        "descripcion": "Esta página es una de las 4 páginas públicas que él desarrolló, utilizando frontend y backend. Todas funcionan con una base de datos, lo que permite distinguir entre roles públicos y privados. La que estás viendo es la página pública; además, existe otra página destinada a la gestión de datos que se encarga de visualizar dinámicamente la información en la página pública.",
+        "tecnologias": {
+            "frontend": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Bootstrap."
+            ],
+            "backend": [
+                "PHP",
+                "MVC",
+                "POO",
+                "jQuery",
+                "Ajax."
+            ],
+            "base_de_datos": [
+                "MySQL",
+                "Normalización 3° FN",
+                "Procedimientos Almacenados."
+            ]
+        }
+    },
+    {
+        "Id": 3,
+        "titulo": "Proyecto C",
+        "descripcion": "Esta página es una de las 4 páginas públicas que él desarrolló, utilizando frontend y backend. Todas funcionan con una base de datos, lo que permite distinguir entre roles públicos y privados. La que estás viendo es la página pública; además, existe otra página destinada a la gestión de datos que se encarga de visualizar dinámicamente la información en la página pública.",
+        "tecnologias": {
+            "frontend": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Bootstrap."
+            ],
+            "backend": [
+                "PHP",
+                "MVC",
+                "POO",
+                "jQuery",
+                "Ajax."
+            ],
+            "base_de_datos": [
+                "MySQL",
+                "Normalización 3° FN",
+                "Procedimientos Almacenados."
+            ]
+        }
+    },
+    {
+        "Id": 4,
+        "titulo": "Proyecto D",
+        "descripcion": "Esta página es una de las 4 páginas públicas que él desarrolló, utilizando frontend y backend. Todas funcionan con una base de datos, lo que permite distinguir entre roles públicos y privados. La que estás viendo es la página pública; además, existe otra página destinada a la gestión de datos que se encarga de visualizar dinámicamente la información en la página pública.",
+        "tecnologias": {
+            "frontend": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Bootstrap."
+            ],
+            "backend": [
+                "PHP",
+                "MVC",
+                "POO",
+                "jQuery",
+                "Ajax."
+            ],
+            "base_de_datos": [
+                "MySQL",
+                "Normalización 3° FN",
+                "Procedimientos Almacenados."
+            ]
+        }
+    },
+    {
+        "Id": 5,
+        "titulo": "Proyecto E - Página Administrativa",
+        "descripcion": "Esta página administrativa utiliza tecnologías tanto en el frontend como en el backend. Su función principal es gestionar los datos, los cuales serán visualizados en las páginas públicas. Esta página administrativa cumple con un diseño escalable, validaciones, seguridad y buenas prácticas",
+        "tecnologias": {
+            "frontend": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Bootstrap",
+                "AdminLTE."
+            ],
+            "backend": [
+                "PHP",
+                "MVC",
+                "POO",
+                "jQuery",
+                "Ajax",
+                "Expresiones Regulares",
+                "Prácticas de OWASP",
+                "Seguridad de Roles."
+            ],
+            "base_de_datos": [
+                "MySQL",
+                "Normalización 3° FN",
+                "Procedimientos Almacenados",
+                "Encriptación de datos."
+            ]
+        }
+    }
+]

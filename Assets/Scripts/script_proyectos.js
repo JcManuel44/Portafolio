@@ -1,5 +1,5 @@
 document.getElementById('boton-descargar-cv').addEventListener('click', function() {
-    var pdf_ruta = '../../Pdf/Curriculum_Vitae.pdf';
+    var pdf_ruta = '../../../Pdf/Curriculum_Vitae.pdf';
     
     var pdf_titulo = 'Curriculum Vitae';
     window.open(pdf_ruta, '_blank');

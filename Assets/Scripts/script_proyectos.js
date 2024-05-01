@@ -37,7 +37,7 @@ function closeModal() {
 
 function abrirPDF(elementoBoton) {
     var documentoID = elementoBoton.getAttribute('data-documento-id');
-    var jsonPath = '../../Json/projectos_pdf.json';
+    var jsonPath = 'https://jcmanuel44.github.io/Portafolio/Json/projectos_pdf.json';
 
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {

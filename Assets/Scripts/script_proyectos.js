@@ -1,5 +1,5 @@
 document.getElementById('boton-descargar-cv').addEventListener('click', function() {
-    var pdf_ruta = '../../Pdf/Curriculum_Vitae.pdf';
+    var pdf_ruta = 'https://github.com/JcManuel44/Portafolio/Pdf/Curriculum_Vitae.pdf';
     
     var pdf_titulo = 'Curriculum Vitae';
     window.open(pdf_ruta, '_blank');
@@ -9,7 +9,7 @@ document.getElementById('boton-descargar-cv').addEventListener('click', function
 
 
 function openModal(projectId) {
-    fetch('../../Json/Tecnologias.json')
+    fetch('https://github.com/JcManuel44/Portafolio/Json/Tecnologias.json')
         .then(response => response.json())
         .then(data => {
             const project = data.find(p => p.Id === projectId);
@@ -41,7 +41,7 @@ function closeModal() {
 
 function abrirPDF(elementoBoton) {
     var documentoID = elementoBoton.getAttribute('data-documento-id');
-    var jsonPath = '../../Json/projectos_pdf.json';
+    var jsonPath = 'https://github.com/JcManuel44/Portafolio/Json/projectos_pdf.json';
 
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {

@@ -1,69 +1,86 @@
-document.getElementById('boton-descargar-cv').addEventListener('click', function() {
-    var pdf_ruta = 'https://jcmanuel44.github.io/Portafolio/Pdf/Curriculum_Vitae.pdf';
-    
-    var pdf_titulo = 'Curriculum Vitae';
-    window.open(pdf_ruta, '_blank');
+let lastFocusedProjectElement = null;
+let projectsCache = [];
 
-    pdfWindow.document.title = pdf_titulo;
+document.addEventListener("DOMContentLoaded", () => {
+    bindProjectModalEscape();
 });
 
+async function getProjects() {
+    if (projectsCache.length > 0) {
+        return projectsCache;
+    }
 
-function openModal(projectId) {
-    fetch('https://jcmanuel44.github.io/Portafolio/Json/Tecnologias.json')
-        .then(response => response.json())
-        .then(data => {
-            const project = data.find(p => p.Id === projectId);
-            if (project) {
-                document.getElementById("modal-title").textContent = project.titulo;
-                document.getElementById("modal-description").textContent = project.descripcion;
+    const response = await fetch("Json/Tecnologias.json");
 
-                const technologiesContent = `
-            <i class="fas fa-check"></i> Frontend: ${project.tecnologias.frontend.join("/ ")}<br>
-            <i class="fas fa-check"></i> Backend: ${project.tecnologias.backend.join("/ ")}<br>
-            <i class="fas fa-check"></i> Base de Datos: ${project.tecnologias.base_de_datos.join("/ ")}`;
-                document.getElementById("modal-technologies").innerHTML = technologiesContent;
+    if (!response.ok) {
+        throw new Error("No se pudo cargar el archivo de proyectos.");
+    }
 
-                const modal = document.getElementById("Modal-Project");
-                modal.style.display = "block";
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching data:', error);
-        });
+    const projects = await response.json();
+    projectsCache = projects;
+
+    return projects;
+}
+
+function createProjectModalContent(project) {
+    return `
+        <p><strong>Rol:</strong> ${project.rol}</p>
+        <p><strong>Contexto:</strong> ${project.contexto}</p>
+        <p><strong>Tecnologías:</strong> ${project.tecnologias.join(" · ")}</p>
+        <p><strong>Aportes:</strong> ${project.aportes.join(" · ")}</p>
+    `;
+}
+
+async function openModal(projectId, triggerElement = null) {
+    try {
+        const projects = await getProjects();
+        const selectedProject = projects.find((project) => project.id === projectId);
+
+        if (!selectedProject) {
+            throw new Error("Proyecto no encontrado.");
+        }
+
+        lastFocusedProjectElement = triggerElement || document.activeElement;
+
+        const modal = document.getElementById("Modal-Project");
+        const titleElement = document.getElementById("modal-title");
+        const descriptionElement = document.getElementById("modal-description");
+        const technologiesElement = document.getElementById("modal-technologies");
+
+        titleElement.textContent = selectedProject.titulo;
+        descriptionElement.textContent = selectedProject.descripcion;
+        technologiesElement.innerHTML = createProjectModalContent(selectedProject);
+
+        modal.classList.add("show");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+
+        const closeButton = modal.querySelector(".close-modal");
+        closeButton?.focus();
+    } catch (error) {
+        console.error("Error abriendo proyecto:", error);
+        alert("No se pudo abrir el detalle del proyecto.");
+    }
 }
 
 function closeModal() {
     const modal = document.getElementById("Modal-Project");
-    modal.style.display = "none";
+    if (!modal) return;
+
+    const closeButton = modal.querySelector(".close-modal");
+    closeButton?.blur();
+
+    modal.classList.remove("show");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+
+    lastFocusedProjectElement?.focus();
 }
 
-
-
-function abrirPDF(elementoBoton) {
-    var documentoID = elementoBoton.getAttribute('data-documento-id');
-    var jsonPath = 'https://jcmanuel44.github.io/Portafolio/Json/projectos_pdf.json';
-
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-                var archivosJSON = JSON.parse(xhr.responseText);
-                
-                var documento = archivosJSON.documentos.find(function(doc) {
-                    return doc.id === documentoID;
-                });
-                
-                if (documento) {
-                    var pdfPath = documento.ruta;
-                    window.open(pdfPath, '_blank');
-                } else {
-                    console.error("No se encontró ningún documento con el ID especificado en el archivo JSON.");
-                }
-            } else {
-                console.error("Error al cargar el archivo JSON: " + xhr.status);
-            }
+function bindProjectModalEscape() {
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            closeModal();
         }
-    };
-    xhr.open('GET', jsonPath, true);
-    xhr.send();
+    });
 }

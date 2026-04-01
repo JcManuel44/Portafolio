@@ -1,390 +1,802 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-    <link rel="stylesheet" href="Assets/Styles/normalize.css">
-    <link rel="stylesheet" href="Assets/Styles/styles.css">
-    <title>Portafolio</title>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5SJEB1S029"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>José Manuel Aguilar | Portafolio Backend Java</title>
 
-  gtag('config', 'G-5SJEB1S029');
-</script>
+    <meta
+        name="description"
+        content="Portafolio de José Manuel Aguilar Muñoz, Ingeniero en Informática con experiencia en Java, Spring Boot, APIs REST, SQL Server, Docker, AWS y documentación técnica."
+    />
 
+    <link rel="icon" type="image/svg+xml" href="Assets/Images/imagen_perfil.svg" />
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="Assets/Styles/normalize.css" />
+    <link rel="stylesheet" href="Assets/Styles/styles.css" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5SJEB1S029"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-5SJEB1S029");
+    </script>
 </head>
-
 <body>
-
     <header>
-        <nav class="sidebar">
+        <nav class="sidebar" id="sidebar" aria-label="Navegación principal">
             <div class="user-info">
-                <h3>José Manuel A.</h3>
+                <h1>José Manuel Aguilar</h1>
                 <p class="subtitle">Ingeniero en Informática</p>
-
+                <p class="sidebar-role">Backend Java · Spring Boot · APIs REST</p>
             </div>
+
             <div class="menu">
                 <ul>
-                    <li><a href="#home" class="nav-btn">Inicio</a></li>
+                    <li><a href="#home" class="nav-btn active">Inicio</a></li>
                     <li><a href="#about-me" class="nav-btn">Sobre mí</a></li>
-                    <li><a href="#skills" class="nav-btn">Skills</a></li>
+                    <li><a href="#skills" class="nav-btn">Stack</a></li>
                     <li><a href="#proyectos" class="nav-btn">Proyectos</a></li>
+                    <li><a href="#certificados" class="nav-btn">Certificados</a></li>
                     <li><a href="#contacto" class="nav-btn">Contacto</a></li>
                 </ul>
             </div>
+
             <div class="social-icons">
-                <button class="boton-descargar-cv" id="boton-descargar-cv"><span class="boton-texto">Descargar CV
-                    </span></button>
-                <a href="https://www.linkedin.com/in/jos%C3%A9-manuel-aguilar-mu%C3%B1oz-5246902b7/" target="_blank"><i class="social-icon fab fa-linkedin fa-lg text-white"></i></a>
-                <a href="https://github.com/JcManuel44" target="_blank"><i class="social-icon fab fa-github fa-lg text-white"></i></a>
-                <a href="mailto:portafoliocorreos@gmail.com">
-                    <i class="social-icon far fa-envelope fa-lg text-white"></i>
-                </a>
-                
-                
+                <button class="boton-descargar-cv" id="boton-descargar-cv" type="button">
+                    <span class="boton-texto">Descargar CV</span>
+                </button>
+
+                <div class="social-links">
+                    <a
+                        href="https://www.linkedin.com/in/jos%C3%A9-manuel-aguilar-mu%C3%B1oz-5246902b7/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                    >
+                        <i class="social-icon fab fa-linkedin"></i>
+                    </a>
+
+                    <a
+                        href="https://github.com/JcManuel44"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub"
+                    >
+                        <i class="social-icon fab fa-github"></i>
+                    </a>
+
+                    <a href="mailto:jcm4nu3l444@gmail.com" aria-label="Correo">
+                        <i class="social-icon far fa-envelope"></i>
+                    </a>
+                </div>
             </div>
         </nav>
     </header>
 
     <main class="container">
-
         <div class="main-content">
-            <div class="menu-toggle">
-                <i class="fas fa-bars fa-lg text-primary"></i>
-            </div>
-            <!-- ------------ -->
-            <!-- PRESENTACION -->
-            <!-- ------------ -->
-            <section id="home" class="section home" data-aos="fade-zoom-out">
-                <div class="columns">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- INICIO -->
+            <section id="home" class="section home" data-aos="fade-up">
+                <div class="columns home-grid">
                     <div class="column column1-home">
-                        <p class="info-frontPage">Mi Nombre es: <br>
-                            <strong>José Manuel Aguilar M.</strong><br>
-                            <span class="subtitle-frontPage2">Soy<br><span class="subtitle-frontPage2">Desarollador </span><span class="subtitle-frontPage"></span></span><br>Soy un especialista en desarrollo de software
-                            con experiencia específica en aplicaciones
-                            web, especialmente enfocado en el Backend. Tengo habilidades técnicas y blandas variadas, y
-                            una sólida formación y experiencia en el área. Mi objetivo es crear software siempre en base
-                            a buenas prácticas y estándares.
-                        </p>
-                    </div>
-                    <div class="column column2-home">
-                        <img src="Assets/Images/imagen_perfil.svg" class="image_profile" alt="">
-                    </div>
-                </div>
-            </section>
+                        <p class="eyebrow">Portafolio profesional</p>
 
-            <!-- ------------ -->
-            <!-- SOBRE MI -->
-            <!-- ------------ -->
-            <section id="about-me" class="section about-me" data-aos="fade-zoom-out">
-                <h2>
-                    <span class="titulo1">Sobre</span>
-                    <span>Mi</span>
-                </h2>
-                <div class="columns container-about-me">
-                    <div class="column column-about-me">
-                        <h3>Datos Personales</h3>
-                        <ul class="bullet-list">
-                            <li><span class="icon"><i
-                                        class="fa-solid fa-circle-chevron-right"></i></span><strong>Nombres:</strong>&nbsp;José
-                                Aguilar.</li>
-                            <li><span class="icon"><i
-                                        class="fa-solid fa-circle-chevron-right"></i></span><strong>Apellidos:</strong>&nbsp;Aguilar
-                                Muñoz.</li>
-                            <li><span class="icon"><i
-                                        class="fa-solid fa-circle-chevron-right"></i></span><strong>Edad:</strong>&nbsp;27
-                                Años.</li>
-                            <li><span class="icon"><i
-                                        class="fa-solid fa-circle-chevron-right"></i></span><strong>Nacionalidad:</strong>
-                                &nbsp;Chileno.</li>
-                            <li><span class="icon"><i
-                                        class="fa-solid fa-circle-chevron-right"></i></span><strong>Profesion:</strong>&nbsp;Ing.
-                                Informatico.</li>
-                        </ul>
-                    </div>
+                        <h2 class="hero-title">
+                            Desarrollador <span class="hero-highlight">Backend</span>
+                            con experiencia en
+                            <span class="subtitle-frontPage"></span>
+                        </h2>
+<p class="info-frontPage">
+    Ingeniero en Informática con experiencia en proyectos públicos y privados,
+    especializado en desarrollo de <strong>aplicaciones web</strong> y backend con
+    <strong>Java y Spring Boot</strong>. He participado en análisis, diseño e
+    implementación de soluciones, construcción de <strong>APIs REST</strong>,
+    validaciones de negocio, integración con servicios, testing funcional,
+    modelado de bases de datos y documentación técnica.
+</p>
 
-
-
-                    <div class="column column-about-me">
-                        <h3>Datos Academicos</h3>
-                        <div class="column about-me-academic">
-                            <ul class="list-column-about-me-academic">
-                                <li>
-                                    <div class="list-content-about-me-academic">
-                                        <div class="text">
-                                            <h4><span class="icon"><i
-                                                        class="fa-solid fa-circle-chevron-right"></i></span>Enseñanza
-                                                Básica/Media/Tecnico Administracion de Empresas</h4>
-                                            <p>Liceo Santo Cura de Ars.</p>
-                                            <h4><span class="icon"><i
-                                                        class="fa-solid fa-circle-chevron-right"></i></span>Ingeniero en
-                                                Informatica</h4>
-                                            <p>Universidad Inacap.</p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                            </ul>
+                        <div class="hero-badges">
+                            <span>Java 8 / 17 / 21</span>
+                            <span>Spring Boot</span>
+                            <span>SQL Server</span>
+                            <span>Docker</span>
+                            <span>AWS</span>
+                            <span>APIs REST</span>
                         </div>
 
+                        <div class="hero-actions">
+                            <a href="#proyectos" class="primary-btn">Ver proyectos</a>
+                            <a href="#contacto" class="secondary-btn">Contactar</a>
+                        </div>
                     </div>
-                    <div class="column column-about-me">
-                        <h3>Experiencia</h3>
-                        <ul class="bullet-list">
-                            <li><span class="icon"><i class="fa-solid fa-circle-chevron-right"></i></span>Practica
-                                Profesional: GTD Valdivia-Analista de datos (2021.)</li>
-                            <li><span class="icon"><i class="fa-solid fa-circle-chevron-right"></i></span>OG
-                                Consultores: Desarrollador de software Java(2022).</li>
-                            <li><span class="icon"><i class="fa-solid fa-circle-chevron-right"></i></span>Proyectos
-                                independiente y autodidacta(2022-2024).</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="banner-contact-about-me">
-                    <div class="column-contact-about-me">
-                        <i class="fas fa-mobile icon-banner-contact-about-me"></i>
-                        <p class="text-banner-contact-about-me">+569 37340443</p>
-                    </div>
-                    <div class="column-contact-about-me">
-                        <i class="fas fa-envelope icon-banner-contact-about-me"></i>
-                        <p class="text-banner-contact-about-me">jcmanu3l44@gmail.com</p>
-                    </div>
-                    <div class="column-contact-about-me">
-                        <i class="fas fa-location-dot icon-banner-contact-about-me"></i>
-                        <p class="text-banner-contact-about-me">Máfil/Valdivia</p>
-                    </div>
-                </div>
-            </section>
-            <!-- ------------ -->
-            <!-- ---SKILLS--- -->
-            <!-- ------------ -->
-            <section id="skills" class="section skills" data-aos="fade-zoom-out">
-                <h2>
-                    <span class="titulo1">Skills de</span>
-                    <span>Programación</span>
-                </h2>
 
-                <div class="container-skills" id="container-skills" ondragover="dragOver(event)"
-                    ondragleave="dragLeave(event)" ondrop="dragDrop(event)">
-                    <div id="card-skills" class="card-skills" draggable="true" ondragstart="dragStart(event)"
-                        data-index="0">
-                        <i class="fab fa-html5 icono"></i>
-                        <p>HTML</p>
-                    </div>
-                    <div id="card-skills" class="card-skills" draggable="true" ondragstart="dragStart(event)"
-                        data-index="1">
-                        <i class="fab fa-css3-alt"></i>
-                        <p>CSS</p>
-                    </div>
-                    <div id="card-skills" class="card-skills" draggable="true" ondragstart="dragStart(event)"
-                        data-index="2">
-                        <i class="fa-brands fa-bootstrap"></i>
-                        <p>Bootstrap</p>
-                    </div>
-                    <div id="card-skills" class="card-skills" draggable="true" ondragstart="dragStart(event)"
-                        data-index="3">
-                        <i class="fab fa-js"></i>
-                        <p>JavaScript</p>
-                    </div>
-                    <div id="card-skills" class="card-skills" draggable="true" ondragstart="dragStart(event)"
-                        data-index="4">
-                        <i class="fab fa-java"></i>
-                        <p>Java</p>
-                    </div>
-                    <div id="card-skills" class="card-skills" draggable="true" ondragstart="dragStart(event)"
-                        data-index="5">
-                        <i class="fab fa-php"></i>
-                        <p>PHP</p>
-                    </div>
-                    <div id="card-skills" class="card-skills" draggable="true" ondragstart="dragStart(event)"
-                        data-index="6">
-                        <i class="fab fa-python"></i>
-                        <p>Python</p>
-                    </div>
-                    <div id="card-skills" class="card-skills" draggable="true" ondragstart="dragStart(event)"
-                        data-index="7">
-                        <i class="fa-solid fa-code"></i>
-                        <p>POO</p>
-                    </div>
-                    <div id="card-skills" class="card-skills" draggable="true" ondragstart="dragStart(event)"
-                        data-index="8">
-                        <i class="fa-solid fa-database"></i>
-                        <p>Mysql/Sql</p>
-                    </div>
-                    <div id="card-skills" class="card-skills" draggable="true" ondragstart="dragStart(event)"
-                        data-index="9">
-                        <i class="fa-solid fa-diagram-project"></i>
-                        <p>Analisis</p>
-                    </div>
-                    <div id="card-skills" class="card-skills" draggable="true" ondragstart="dragStart(event)"
-                        data-index="10">
-                        <i class="fa-solid fa-list"></i>
-                        <p>MVC/P. Capas</p>
-                    </div>
-                    <div id="card-skills" class="card-skills" draggable="true" ondragstart="dragStart(event)"
-                        data-index="11">
-                        <i class="fa-solid fa-arrows-spin"></i>
-                        <p>Scrum</p>
+                    <div class="column column2-home">
+                        <div class="profile-card">
+                            <img
+                                src="Assets/Images/imagen_perfil.svg"
+                                class="image_profile"
+                                alt="Ilustración de perfil profesional"
+                            />
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- ------------- -->
-            <!-- --PROYECTOS-- -->
-            <!-- ------------ -->
-            <section id="proyectos" class="section proyectos" data-aos="fade-zoom-out">
+            <!-- SOBRE MI -->
+           <!-- SOBRE MI -->
+<section id="about-me" class="section about-me" data-aos="fade-up">
+    <h2>
+        <span class="titulo1">Sobre</span>
+        <span>mí</span>
+    </h2>
+
+    <div class="about-wrapper">
+        <article class="about-card">
+            <h3>Cómo trabajo</h3>
+            <p>
+                Me gusta participar en el análisis, diseño y mejora de soluciones,
+                manteniendo foco en la calidad, la claridad del código y el cumplimiento
+                de los requerimientos. Suelo adaptarme bien a equipos de trabajo, metodologías
+                ágiles y entornos donde se requiere orden técnico y aprendizaje continuo.
+            </p>
+        </article>
+
+        <article class="about-card">
+            <h3>Fortalezas</h3>
+            <ul class="simple-list">
+                <li>Análisis de requerimientos y validaciones funcionales.</li>
+                <li>Documentación técnica y organización del trabajo.</li>
+                <li>Buenas prácticas, código limpio y enfoque en mantenibilidad.</li>
+                <li>Responsabilidad, trabajo en equipo y mejora continua.</li>
+            </ul>
+        </article>
+
+        <article class="about-card">
+            <h3>Intereses profesionales</h3>
+            <ul class="simple-list">
+                <li>Desarrollo backend y arquitectura de aplicaciones.</li>
+                <li>Seguridad de software y buenas prácticas de desarrollo.</li>
+                <li>Integración de servicios y mejora evolutiva de sistemas.</li>
+                <li>Análisis de datos e inteligencia artificial como áreas complementarias.</li>
+            </ul>
+        </article>
+    </div>
+
+    <div class="banner-contact-about-me">
+        <div class="column-contact-about-me">
+            <i class="fas fa-mobile icon-banner-contact-about-me"></i>
+            <p class="text-banner-contact-about-me">+56 9 3734 0443</p>
+        </div>
+
+        <div class="column-contact-about-me">
+            <i class="fas fa-envelope icon-banner-contact-about-me"></i>
+            <p class="text-banner-contact-about-me">jcm4nu3l444@gmail.com</p>
+        </div>
+
+        <div class="column-contact-about-me">
+            <i class="fas fa-location-dot icon-banner-contact-about-me"></i>
+            <p class="text-banner-contact-about-me">Máfil, Región de Los Ríos</p>
+        </div>
+    </div>
+</section>
+
+           <!-- STACK -->
+<section id="skills" class="section skills" data-aos="fade-up">
+    <h2>
+        <span class="titulo1">Stack</span>
+        <span>tecnológico</span>
+    </h2>
+
+    <div class="stack-grid">
+        <article class="stack-card">
+            <h3>Backend</h3>
+            <div class="tech-tags">
+                <span>Java 8</span>
+                <span>Java 17</span>
+                <span>Java 21</span>
+                <span>Spring Boot</span>
+                <span>Spring Security</span>
+                <span>JSP / Servlets</span>
+                <span>PHP</span>
+                <span>JHipster</span>
+            </div>
+        </article>
+
+        <article class="stack-card">
+            <h3>APIs e integración</h3>
+            <div class="tech-tags">
+                <span>REST</span>
+                <span>Swagger / OpenAPI</span>
+                <span>JSON</span>
+                <span>Postman</span>
+                <span>SoapUI</span>
+                <span>jQuery / Ajax</span>
+            </div>
+        </article>
+
+        <article class="stack-card">
+            <h3>Base de datos</h3>
+            <div class="tech-tags">
+                <span>SQL Server</span>
+                <span>MySQL</span>
+                <span>PostgreSQL</span>
+                <span>Stored Procedures</span>
+                <span>Normalización 3FN</span>
+            </div>
+        </article>
+
+        <article class="stack-card">
+            <h3>Infraestructura y DevOps</h3>
+            <div class="tech-tags">
+                <span>Docker</span>
+                <span>AWS</span>
+                <span>Amazon S3</span>
+                <span>Linux</span>
+                <span>CentOS</span>
+                <span>VirtualBox</span>
+                <span>XAMPP</span>
+            </div>
+        </article>
+
+        <article class="stack-card">
+            <h3>Herramientas de desarrollo</h3>
+            <div class="tech-tags">
+                <span>Git</span>
+                <span>Bitbucket</span>
+                <span>IntelliJ IDEA</span>
+                <span>Eclipse</span>
+                <span>VS Code</span>
+                <span>SSMS</span>
+                <span>SonarQube</span>
+            </div>
+        </article>
+
+        <article class="stack-card">
+            <h3>Calidad y documentación</h3>
+            <div class="tech-tags">
+                <span>JUnit</span>
+                <span>Testing funcional</span>
+                <span>Casos de prueba</span>
+                <span>Matrices de validación</span>
+                <span>Documentación técnica</span>
+                <span>Scrum</span>
+            </div>
+        </article>
+
+        <article class="stack-card">
+            <h3>Frontend de apoyo</h3>
+            <div class="tech-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+                <span>jQuery</span>
+                <span>AdminLTE</span>
+            </div>
+        </article>
+
+        <article class="stack-card">
+            <h3>Modelado y análisis</h3>
+            <div class="tech-tags">
+                <span>UML</span>
+                <span>MER</span>
+                <span>Diagramas de flujo</span>
+                <span>Draw.io</span>
+                <span>Visio</span>
+                <span>Bizagi</span>
+                <span>Análisis de requerimientos</span>
+            </div>
+        </article>
+
+        <article class="stack-card">
+            <h3>Análisis de datos</h3>
+            <div class="tech-tags">
+                <span>Excel</span>
+                <span>Power Query</span>
+                <span>Power Pivot</span>
+                <span>DAX</span>
+                <span>Tableau</span>
+                <span>Power BI</span>
+                <span>Python</span>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- PROYECTOS -->
+<section id="proyectos" class="section proyectos" data-aos="fade-up">
+
+    <h2>
+        <span class="titulo1">Experiencia y</span>
+        <span>proyectos</span>
+    </h2>
+
+    <div class="projects-intro">
+        <p>
+            He participado en el desarrollo, mejora e integración de diversas
+            plataformas tecnológicas utilizadas por instituciones públicas y
+            organizaciones privadas.
+
+            Mi experiencia se centra principalmente en desarrollo backend con
+            Java y Spring Boot, integración de servicios, testing funcional,
+            validaciones de negocio, documentación técnica y soporte evolutivo
+            de sistemas.
+        </p>
+    </div>
+
+
+    <div class="container-card-project">
+
+        <!-- SENAMA -->
+        <article class="card-project">
+            <div class="card-image">
+                <img src="Assets/Images/Project_1.svg" alt="Proyecto SENAMA">
+            </div>
+
+            <div class="card-content">
+                <h3>SENAMA</h3>
+
+                <p class="project-role">
+                    Java · JSP/Servlets · SQL Server · AWS S3
+                </p>
+
+                <p>
+                    Desarrollo de módulos para gestión de información y archivos,
+                    incluyendo integración con almacenamiento en Amazon S3.
+                </p>
+            </div>
+
+            <div class="card-buttons">
+                <button class="button-project-medium" onclick="openModal(1)">
+                    Ver detalle
+                </button>
+            </div>
+        </article>
+
+
+        <!-- SERNAPESCA -->
+        <article class="card-project">
+            <div class="card-image">
+                <img src="Assets/Images/Project_2.svg" alt="Proyecto SERNAPESCA">
+            </div>
+
+            <div class="card-content">
+                <h3>SERNAPESCA</h3>
+
+                <p class="project-role">
+                    Java 21 · Spring Boot · API REST
+                </p>
+
+                <p>
+                    Desarrollo backend de API para gestión de microdatos y
+                    administración de adjuntos con validaciones y trazabilidad.
+                </p>
+            </div>
+
+            <div class="card-buttons">
+                <button class="button-project-medium" onclick="openModal(2)">
+                    Ver detalle
+                </button>
+            </div>
+        </article>
+
+
+        <!-- LOD -->
+        <article class="card-project">
+            <div class="card-image">
+                <img src="Assets/Images/Project_3.svg" alt="Libro de Obras Digital">
+            </div>
+
+            <div class="card-content">
+                <h3>Libro de Obras Digital</h3>
+
+                <p class="project-role">
+                    Java · Spring Boot · Firma digital
+                </p>
+
+                <p>
+                    Mejoras evolutivas y desarrollo de API para firma digital
+                    avanzada e integración con certificados.
+                </p>
+            </div>
+
+            <div class="card-buttons">
+                <button class="button-project-medium" onclick="openModal(3)">
+                    Ver detalle
+                </button>
+            </div>
+        </article>
+
+
+        <!-- Integraciones -->
+        <article class="card-project">
+            <div class="card-image">
+                <img src="Assets/Images/Project_4.svg" alt="Integraciones">
+            </div>
+
+            <div class="card-content">
+                <h3>Integraciones SOAP / REST</h3>
+
+                <p class="project-role">
+                    QA técnico · Validación de APIs
+                </p>
+
+                <p>
+                    Testing funcional y validación técnica de servicios SOAP y
+                    APIs REST mediante Postman y SOAP UI.
+                </p>
+            </div>
+
+            <div class="card-buttons">
+                <button class="button-project-medium" onclick="openModal(4)">
+                    Ver detalle
+                </button>
+            </div>
+        </article>
+
+
+        <!-- ETIKAPP -->
+        <article class="card-project">
+            <div class="card-image">
+                <img src="Assets/Images/Project_5.svg" alt="EtikApp">
+            </div>
+
+            <div class="card-content">
+                <h3>EtikApp</h3>
+
+                <p class="project-role">
+                    Java · JSP/Servlets · AWS
+                </p>
+
+                <p>
+                    Desarrollo de funcionalidades para evaluación de riesgos
+                    y apoyo en despliegue de entornos cloud.
+                </p>
+            </div>
+
+            <div class="card-buttons">
+                <button class="button-project-medium" onclick="openModal(5)">
+                    Ver detalle
+                </button>
+            </div>
+        </article>
+
+
+        <!-- MAPAMEMORIA -->
+        <article class="card-project">
+            <div class="card-image">
+                <img src="Assets/Images/Project_6.svg" alt="MAPAMEMORIA">
+            </div>
+
+            <div class="card-content">
+                <h3>MAPAMEMORIA</h3>
+
+                <p class="project-role">
+                    Migración Java · Angular
+                </p>
+
+                <p>
+                    Migración tecnológica de Java 8 a 17 y Angular 10 a 19
+                    con mejoras funcionales e integraciones.
+                </p>
+            </div>
+
+            <div class="card-buttons">
+                <button class="button-project-medium" onclick="openModal(6)">
+                    Ver detalle
+                </button>
+            </div>
+        </article>
+
+
+        <!-- Auditoría -->
+        <article class="card-project">
+            <div class="card-image">
+                <img src="Assets/Images/Project_7.svg" alt="Auditoria tecnica">
+            </div>
+
+            <div class="card-content">
+                <h3>Auditoría técnica</h3>
+
+                <p class="project-role">
+                    .NET · SQL Server · SonarQube
+                </p>
+
+                <p>
+                    Evaluación de calidad de código y base de datos para
+                    detectar problemas de integridad y seguridad.
+                </p>
+            </div>
+
+            <div class="card-buttons">
+                <button class="button-project-medium" onclick="openModal(7)">
+                    Ver detalle
+                </button>
+            </div>
+        </article>
+
+
+        <!-- Subsecretaria -->
+        <article class="card-project">
+            <div class="card-image">
+                <img src="Assets/Images/Project_8.svg" alt="Prevencion del delito">
+            </div>
+
+            <div class="card-content">
+                <h3>Prevención del Delito</h3>
+
+                <p class="project-role">
+                    PHP · MySQL
+                </p>
+
+                <p>
+                    Desarrollo de módulo de evaluación y reportes con lógica
+                    condicional para procesos de tamizaje.
+                </p>
+            </div>
+
+            <div class="card-buttons">
+                <button class="button-project-medium" onclick="openModal(8)">
+                    Ver detalle
+                </button>
+            </div>
+        </article>
+
+
+        <!-- Soporte -->
+        <article class="card-project">
+            <div class="card-image">
+                <img src="Assets/Images/Project_9.svg" alt="Soporte sistemas">
+            </div>
+
+            <div class="card-content">
+                <h3>Soporte de sistemas</h3>
+
+                <p class="project-role">
+                    .NET · Java · SQL Server
+                </p>
+
+                <p>
+                    Soporte evolutivo y correctivo en sistemas institucionales
+                    para SENCE, USACH y plataforma CVOTA.
+                </p>
+            </div>
+
+            <div class="card-buttons">
+                <button class="button-project-medium" onclick="openModal(9)">
+                    Ver detalle
+                </button>
+            </div>
+        </article>
+
+
+    </div>
+
+</section>
+
+            <!-- CERTIFICADOS -->
+            <section id="certificados" class="section certificados" data-aos="fade-up">
                 <h2>
                     <span class="titulo1">Mis</span>
-                    <span>Proyectos</span>
+                    <span>certificados</span>
                 </h2>
 
-                <div class="container-card-project">
-                    <div class="card-project">
-                        <div class="card-image">
-                            <img src="Assets/Images/Project_1.svg" alt="Image">
-                        </div>
-                        <div class="card-buttons">
-                            <button class="button-project-medium" onclick="openModal(1)">Abrir Proyecto</button>
-                            <button id="abrir_pdf_proyectos" class="button button-project-child" data-documento-id="1"
-                                onclick="abrirPDF(this)"><i class="fas fa-download"></i></button>
-                        </div>
-                    </div>
-                    <div class="card-project">
-                        <div class="card-image">
-                            <img src="Assets/Images/Project_2.svg" alt="Image">
-                        </div>
-                        <div class="card-buttons">
-                            <button class="button-project-medium" onclick="openModal(2)">Abrir Proyecto</button>
-                            <button id="abrir_pdf_proyectos" class="button button-project-child" data-documento-id="2"
-                                onclick="abrirPDF(this)"><i class="fas fa-download"></i></button>
-                        </div>
-                    </div>
-                    <div class="card-project">
-                        <div class="card-image">
-                            <img src="Assets/Images/Project_3.svg" alt="Image">
-                        </div>
-                        <div class="card-buttons">
-                            <button class="button-project-medium" onclick="openModal(3)">Abrir Proyecto</button>
-                            <button id="abrir_pdf_proyectos" class="button button-project-child" data-documento-id="3"
-                                onclick="abrirPDF(this)"><i class="fas fa-download"></i></button>
-                        </div>
-                    </div>
-                    <div class="card-project">
-                        <div class="card-image">
-                            <img src="Assets/Images/Project_4.svg" alt="Image">
-                        </div>
-                        <div class="card-buttons">
-                            <button class="button-project-medium" onclick="openModal(4)">Abrir Proyecto</button>
-                            <button id="abrir_pdf_proyectos" class="button button-project-child" data-documento-id="4"
-                                onclick="abrirPDF(this)"><i class="fas fa-download"></i></button>
-                        </div>
-                    </div>
-                    <div class="card-project">
-                        <div class="card-image">
-                            <img src="Assets/Images/Project_5.svg" alt="Image">
-                        </div>
-                        <div class="card-buttons">
-                            <button class="button-project-medium" onclick="openModal(5)">Abrir Proyecto</button>
-                            <button id="abrir_pdf_proyectos" class="button button-project-child" data-documento-id="5"
-                                onclick="abrirPDF(this)"><i class="fas fa-download"></i></button>
-                        </div>
-                    </div>
+                <div class="projects-intro">
+                    <p>
+                        Algunos certificados y cursos relacionados con desarrollo de software,
+                        pruebas, metodologías ágiles y formación complementaria.
+                    </p>
                 </div>
+
+                <div class="container-card-certificates" id="certificates-container"></div>
             </section>
 
-            <!-- ------------ -->
-            <!-- --CONTACTO-- -->
-            <!-- ----------- -->
-            <section id="contacto" class="section contacto" data-aos="fade-zoom-out">
+            <!-- CONTACTO -->
+            <section id="contacto" class="section contacto" data-aos="fade-up">
                 <h2>
-                    <span class="titulo1">Comunicate</span>
-                    <span>Conmigo</span>
+                    <span class="titulo1">Comunícate</span>
+                    <span>conmigo</span>
                 </h2>
-                <div class="columns">
-                    <div class="column column1-contact">
-                        <form action="" class="form-contact">
-                            <div class="input-contact">
-                                <input type="text" name="txt_nombre" id="id_txt_nombre" class="input-text"
-                                    placeholder="Ingrese su Nombre" required>
-                                <span class="input-span bottom"></span>
-                                <span class="input-span right"></span>
-                                <span class="input-span top"></span>
-                                <span class="input-span left"></span>
-                            </div>
-                            <div class="input-contact">
-                                <input type="text" name="txt_empresa" id="id_txt_empresa" class="input-text"
-                                    placeholder="Ingrese el Nombre de la Empresa" required>
-                                <span class="input-span bottom"></span>
-                                <span class="input-span right"></span>
-                                <span class="input-span top"></span>
-                                <span class="input-span left"></span>
-                            </div>
-                            <div class="input-contact">
-                                <input type="email" name="txt_correo" id="id_txt_correo" class="input-text"
-                                    placeholder="Ingrese su Correo Electronico" required>
-                                <span class="input-span bottom"></span>
-                                <span class="input-span right"></span>
-                                <span class="input-span top"></span>
-                                <span class="input-span left"></span>
-                            </div>
-                            <div class="input-contact">
-                                <textarea name="txt_mensaje" id="id_txt_mensaje" class="textarea" cols="30" rows="7"
-                                    placeholder="Ingrese Un Mensaje" required></textarea>
-                                <span class="input-span bottom"></span>
-                                <span class="input-span right"></span>
-                                <span class="input-span top"></span>
-                                <span class="input-span left"></span>
-                            </div>
-                            <div class="container-button_contact">
-                                <button type="button" class="button-contact button-send"
-                                    onclick="enviarMensaje()">Enviar</button>
-                                <button type="reset" class="button-contact button-clean">Limpiar</button>
-                            </div>
-                        </form>
 
-                    </div>
-                    <div class="column column2-contact">
-                        <img src="Assets/Images/address-contact.svg" class="image_contact" alt="">
-                    </div>
+                <div class="contact-wrapper">
+                    <article class="contact-info-card">
+                        <h3>¿Buscas apoyo en desarrollo backend?</h3>
+                        <p>
+                            Actualmente busco oportunidades principalmente en modalidad remota.
+                            Si quieres contactarme por una vacante, colaboración o proyecto,
+                            puedes escribirme directamente desde este formulario.
+                        </p>
+
+                        <ul class="contact-list">
+                            <li><i class="fas fa-location-dot"></i> Máfil, Región de Los Ríos</li>
+                            <li><i class="fas fa-envelope"></i> jcm4nu3l444@gmail.com</li>
+                            <li><i class="fas fa-phone"></i> +56 9 3734 0443</li>
+                        </ul>
+                    </article>
+
+                    <article class="contact-form-card">
+                        <form class="form-contact" id="contact-form">
+                            <div class="input-contact">
+                                <label for="id_txt_nombre">Nombre</label>
+                                <input
+                                    type="text"
+                                    id="id_txt_nombre"
+                                    class="input-text"
+                                    placeholder="Tu nombre"
+                                    required
+                                />
+                            </div>
+
+                            <div class="input-contact">
+                                <label for="id_txt_empresa">Empresa</label>
+                                <input
+                                    type="text"
+                                    id="id_txt_empresa"
+                                    class="input-text"
+                                    placeholder="Tu empresa"
+                                    required
+                                />
+                            </div>
+
+                            <div class="input-contact">
+                                <label for="id_txt_correo">Correo</label>
+                                <input
+                                    type="email"
+                                    id="id_txt_correo"
+                                    class="input-text"
+                                    placeholder="correo@empresa.com"
+                                    required
+                                />
+                            </div>
+
+                            <div class="input-contact">
+                                <label for="id_txt_mensaje">Mensaje</label>
+                                <textarea
+                                    id="id_txt_mensaje"
+                                    class="input-textarea"
+                                    rows="6"
+                                    placeholder="Cuéntame brevemente tu consulta..."
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <button type="submit" class="primary-btn full-width" id="submit-contact-btn">
+                                Enviar mensaje
+                            </button>
+
+                            <p id="form-status" class="form-status" aria-live="polite"></p>
+                        </form>
+                    </article>
                 </div>
             </section>
-
         </div>
     </main>
-    <div class="custom-cursor"></div>
-    <div id="Modal-Project" class="modal">
+
+    <!-- MODAL PROYECTOS -->
+    <div
+        id="Modal-Project"
+        class="modal"
+        aria-hidden="true"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+    >
+        <div class="modal-overlay" onclick="closeModal()"></div>
+
         <div class="modal-content">
             <div class="modal-header">
                 <span class="modal-title" id="modal-title"></span>
-                <span class="close-modal" onclick="closeModal()">&times;</span>
+                <button
+                    class="close-modal"
+                    type="button"
+                    onclick="closeModal()"
+                    aria-label="Cerrar modal"
+                >
+                    &times;
+                </button>
             </div>
+
             <div class="modal-body">
                 <p id="modal-description"></p>
-                <p id="modal-technologies"></p>
+                <div id="modal-technologies"></div>
             </div>
+
             <div class="modal-footer">
-                <button onclick="closeModal()">Cerrar</button>
+                <button class="secondary-btn" type="button" onclick="closeModal()">
+                    Cerrar
+                </button>
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
-    <script src="Assets/Scripts/script_maquina_escribir.js"></script>
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- MODAL CERTIFICADOS -->
+    <div
+        id="Modal-Certificate"
+        class="modal"
+        aria-hidden="true"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="certificate-modal-title"
+    >
+        <div class="modal-overlay" onclick="closeCertificateModal()"></div>
+
+        <div class="modal-content modal-content-large">
+            <div class="modal-header">
+                <span class="modal-title" id="certificate-modal-title"></span>
+                <button
+                    class="close-modal"
+                    type="button"
+                    onclick="closeCertificateModal()"
+                    aria-label="Cerrar modal"
+                >
+                    &times;
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <p id="certificate-modal-description"></p>
+
+                <div class="certificate-preview-wrapper">
+                    <iframe
+                        id="certificate-frame"
+                        class="certificate-frame"
+                        src=""
+                        title="Vista previa del certificado"
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+
+            <div class="modal-footer modal-footer-between">
+                <a
+                    id="certificate-open-link"
+                    class="primary-btn"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Abrir PDF
+                </a>
+
+                <button
+                    class="secondary-btn"
+                    type="button"
+                    onclick="closeCertificateModal()"
+                >
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
     <script src="Assets/Scripts/script.js"></script>
+    <script src="Assets/Scripts/script_maquina_escribir.js"></script>
     <script src="Assets/Scripts/script_proyectos.js"></script>
     <script src="Assets/Scripts/script_correo_elelctronico.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="Assets/Scripts/script_animacion_scroll.js"></script>
-
+    <script src="Assets/Scripts/script_certificados.js"></script>
 </body>
-
 </html>

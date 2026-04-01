@@ -1,132 +1,139 @@
 [
-    {
-        "Id": 1,
-        "titulo": "Proyecto A",
-        "descripcion": "Esta página es una de las 4 páginas públicas que él desarrolló, utilizando frontend y backend. Todas funcionan con una base de datos, lo que permite distinguir entre roles públicos y privados. La que estás viendo es la página pública; además, existe otra página destinada a la gestión de datos que se encarga de visualizar dinámicamente la información en la página pública.",
-        "tecnologias": {
-            "frontend": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Bootstrap."
-            ],
-            "backend": [
-                "PHP",
-                "MVC",
-                "POO",
-                "jQuery",
-                "Ajax."
-            ],
-            "base_de_datos": [
-                "MySQL",
-                "Normalización 3° FN",
-                "Procedimientos Almacenados."
-            ]
-        }
-    },
-    {
-        "Id": 2,
-        "titulo": "Proyecto B",
-        "descripcion": "Esta página es una de las 4 páginas públicas que él desarrolló, utilizando frontend y backend. Todas funcionan con una base de datos, lo que permite distinguir entre roles públicos y privados. La que estás viendo es la página pública; además, existe otra página destinada a la gestión de datos que se encarga de visualizar dinámicamente la información en la página pública.",
-        "tecnologias": {
-            "frontend": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Bootstrap."
-            ],
-            "backend": [
-                "PHP",
-                "MVC",
-                "POO",
-                "jQuery",
-                "Ajax."
-            ],
-            "base_de_datos": [
-                "MySQL",
-                "Normalización 3° FN",
-                "Procedimientos Almacenados."
-            ]
-        }
-    },
-    {
-        "Id": 3,
-        "titulo": "Proyecto C",
-        "descripcion": "Esta página es una de las 4 páginas públicas que él desarrolló, utilizando frontend y backend. Todas funcionan con una base de datos, lo que permite distinguir entre roles públicos y privados. La que estás viendo es la página pública; además, existe otra página destinada a la gestión de datos que se encarga de visualizar dinámicamente la información en la página pública.",
-        "tecnologias": {
-            "frontend": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Bootstrap."
-            ],
-            "backend": [
-                "PHP",
-                "MVC",
-                "POO",
-                "jQuery",
-                "Ajax."
-            ],
-            "base_de_datos": [
-                "MySQL",
-                "Normalización 3° FN",
-                "Procedimientos Almacenados."
-            ]
-        }
-    },
-    {
-        "Id": 4,
-        "titulo": "Proyecto D",
-        "descripcion": "Esta página es una de las 4 páginas públicas que él desarrolló, utilizando frontend y backend. Todas funcionan con una base de datos, lo que permite distinguir entre roles públicos y privados. La que estás viendo es la página pública; además, existe otra página destinada a la gestión de datos que se encarga de visualizar dinámicamente la información en la página pública.",
-        "tecnologias": {
-            "frontend": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Bootstrap."
-            ],
-            "backend": [
-                "PHP",
-                "MVC",
-                "POO",
-                "jQuery",
-                "Ajax."
-            ],
-            "base_de_datos": [
-                "MySQL",
-                "Normalización 3° FN",
-                "Procedimientos Almacenados."
-            ]
-        }
-    },
-    {
-        "Id": 5,
-        "titulo": "Proyecto E - Página Administrativa",
-        "descripcion": "Esta página administrativa utiliza tecnologías tanto en el frontend como en el backend. Su función principal es gestionar los datos, los cuales serán visualizados en las páginas públicas. Esta página administrativa cumple con un diseño escalable, validaciones, seguridad y buenas prácticas",
-        "tecnologias": {
-            "frontend": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Bootstrap",
-                "AdminLTE."
-            ],
-            "backend": [
-                "PHP",
-                "MVC",
-                "POO",
-                "jQuery",
-                "Ajax",
-                "Expresiones Regulares",
-                "Prácticas de OWASP",
-                "Seguridad de Roles."
-            ],
-            "base_de_datos": [
-                "MySQL",
-                "Normalización 3° FN",
-                "Procedimientos Almacenados",
-                "Encriptación de datos."
-            ]
-        }
-    }
+  {
+    "id": 1,
+    "titulo": "SENAMA – Desarrollo de módulos y gestión de archivos",
+    "rol": "Analista y Desarrollador de Software",
+    "contexto": "Proyecto web orientado a la gestión de información y archivos institucionales para el Servicio Nacional del Adulto Mayor.",
+    "descripcion": "Participé en el desarrollo de siete módulos, gestionando operaciones de guardar, editar y listar datos con validaciones específicas. También implementé un sistema de archivos integrado con Amazon S3 para subir, editar, eliminar y listar documentos con filtros.",
+    "tecnologias": ["Java", "JSP", "Servlets", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "Ajax", "SQL Server", "Amazon S3", "Eclipse", "SSMS"],
+    "aportes": [
+      "Desarrollo de siete módulos funcionales",
+      "Validaciones de negocio en formularios y procesos",
+      "Integración de archivos con Amazon S3",
+      "Gestión de documentos con filtros",
+      "Uso de SQL Server y procedimientos almacenados"
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "SERNAPESCA – Gestión de microdatos y API de adjuntos",
+    "rol": "Desarrollador Backend",
+    "contexto": "Solución institucional orientada a la gestión de microdatos y administración de adjuntos.",
+    "descripcion": "Participé en el análisis, diseño e implementación de una solución backend para la gestión de microdatos y desarrollo de una API de adjuntos. La solución incorporó validaciones, persistencia, manejo de errores, logs, notificaciones, pruebas y documentación técnica.",
+    "tecnologias": ["Java 21", "Spring Boot", "SQL Server", "JUnit", "Swagger/OpenAPI", "Postman", "Docker", "IntelliJ IDEA", "SSMS"],
+    "aportes": [
+      "Desarrollo de API REST para adjuntos",
+      "Validaciones de negocio y control de flujo",
+      "Manejo de errores, logs y trazabilidad",
+      "Persistencia y optimización en SQL Server",
+      "Pruebas unitarias con JUnit",
+      "Documentación técnica con Swagger/OpenAPI"
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "Libro de Obras Digital (LOD)",
+    "rol": "Desarrollador Backend / Soporte Evolutivo",
+    "contexto": "Sistema de gestión de contratos, hitos, comunicaciones, documentos y firma digital.",
+    "descripcion": "Participé en tareas de depuración, corrección y ampliación funcional del sistema. También desarrollé una API en Java 21 con Spring Boot para firma digital avanzada integrada con un agente local.",
+    "tecnologias": ["Java 1.8", "Java 21", "Spring Boot", "JSP", "Servlets", "HTML", "CSS", "JavaScript", "AdminLTE", "SQL Server", "Docker", "Postman", "IntelliJ IDEA"],
+    "aportes": [
+      "Correcciones y mejoras funcionales",
+      "Gestión de usuarios, roles y permisos",
+      "Refuerzo de seguridad documental",
+      "Implementación de reportes y jobs automatizados",
+      "Desarrollo de API para firma digital avanzada",
+      "Integración con certificados y agente local"
+    ]
+  },
+  {
+    "id": 4,
+    "titulo": "Integraciones con Web Services y API REST",
+    "rol": "Analista / QA Técnico",
+    "contexto": "Proyectos de validación técnica y funcional de integraciones SOAP/REST, firma electrónica y visualización de información.",
+    "descripcion": "Participé en proyectos enfocados en testing y validación funcional. Mi trabajo incluyó análisis de requerimientos, diseño de casos de prueba, matrices de validación, revisión de payloads, análisis de errores y validación técnica de servicios.",
+    "tecnologias": ["Postman", "SOAP UI", "APIs REST", "SOAP", "Microsoft Word", "IntelliJ IDEA"],
+    "aportes": [
+      "Diseño de casos de prueba",
+      "Matrices de validación funcional",
+      "Validación técnica de endpoints y payloads",
+      "Análisis de errores y consistencia de datos",
+      "Documentación técnica y criterios de aceptación"
+    ]
+  },
+  {
+    "id": 5,
+    "titulo": "EtikApp y despliegue de entornos en AWS",
+    "rol": "Desarrollador / Apoyo en Infraestructura",
+    "contexto": "Proyecto orientado a evaluación de riesgos y apoyo en configuración de entornos cloud para distintos sistemas.",
+    "descripcion": "Participé en el desarrollo de una funcionalidad para EtikApp, incorporando lógica de negocio, notificaciones y reportes estadísticos. Además, colaboré en la configuración y despliegue de entornos en AWS para distintos proyectos.",
+    "tecnologias": ["Java", "JSP", "Servlets", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "Ajax", "SQL Server", "AWS", "Eclipse", "SSMS"],
+    "aportes": [
+      "Implementación de funcionalidad de evaluación de riesgos",
+      "Lógica de negocio, notificaciones y reportes",
+      "Modelado y persistencia en SQL Server",
+      "Configuración y despliegue de entornos AWS",
+      "Soporte a múltiples stacks tecnológicos"
+    ]
+  },
+  {
+    "id": 6,
+    "titulo": "MAPAMEMORIA – Migración y mejoras evolutivas",
+    "rol": "Desarrollador / Soporte evolutivo",
+    "contexto": "Proyecto de migración tecnológica y mejora funcional de plataforma institucional.",
+    "descripcion": "Participé en la migración tecnológica del proyecto MAPAMEMORIA, actualizando el backend de Java 1.8 a 17 y el frontend de Angular 10 a 19 bajo arquitectura JHipster. También colaboré en mejoras funcionales, integraciones y despliegues en entornos de prueba.",
+    "tecnologias": ["Java 8", "Java 17", "Angular 10", "Angular 19", "JHipster", "VirtualBox", "CentOS", "Google Analytics", "reCAPTCHA"],
+    "aportes": [
+      "Migración tecnológica del stack backend y frontend",
+      "Mejoras evolutivas y correcciones funcionales",
+      "Integraciones con Google Analytics y reCAPTCHA",
+      "Ajustes en formularios y vistas",
+      "Apoyo en despliegues en entornos de prueba"
+    ]
+  },
+  {
+    "id": 7,
+    "titulo": "Auditoría Técnica – Código y Base de Datos",
+    "rol": "Analista Técnico",
+    "contexto": "Auditoría técnica para proyecto institucional desarrollado en .NET y SQL Server.",
+    "descripcion": "Realicé una auditoría técnica de un proyecto .NET, evaluando tanto el código como la base de datos. Detecté problemas de calidad, integridad y estructura, revisando normalización, seguridad y mantenibilidad, y entregando un informe con hallazgos y recomendaciones.",
+    "tecnologias": [".NET", "SQL Server", "SonarQube", "Microsoft Word"],
+    "aportes": [
+      "Revisión técnica de código y base de datos",
+      "Detección de problemas de calidad e integridad",
+      "Evaluación de seguridad y mantenibilidad",
+      "Análisis de normalización de base de datos",
+      "Informe documentado con hallazgos y mejoras"
+    ]
+  },
+  {
+    "id": 8,
+    "titulo": "Subsecretaría de Prevención del Delito",
+    "rol": "Desarrollador",
+    "contexto": "Aplicación web orientada a evaluación y tamizaje con lógica condicional y reportes.",
+    "descripcion": "Participé en el desarrollo de un módulo dentro de una aplicación web de evaluación y tamizaje, implementando reglas de negocio basadas en puntajes, validaciones previas, mantenedor administrativo y funcionalidades de generación de reportes y exportación a Excel.",
+    "tecnologias": ["PHP", "HTML", "CSS", "JavaScript", "MySQL", "XAMPP"],
+    "aportes": [
+      "Desarrollo de módulo con lógica condicional",
+      "Implementación de validaciones funcionales",
+      "Mantenedor administrativo para gestión de accesos",
+      "Generación de reportes y exportación a Excel",
+      "Persistencia y consultas en MySQL"
+    ]
+  },
+  {
+    "id": 9,
+    "titulo": "Soporte de sistemas – SENCE, USACH y CVOTA",
+    "rol": "Analista y Desarrollador de Software",
+    "contexto": "Soporte evolutivo, correctivo y validación funcional en sistemas institucionales y plataforma de votaciones.",
+    "descripcion": "Participé en soporte de desarrollo y mantenimiento sobre sistemas institucionales desarrollados en .NET y Java, además de tareas de testing, análisis de incidencias, validación funcional y apoyo a usuarios en plataforma de votaciones.",
+    "tecnologias": [".NET", "Java", "JSP", "Servlets", "SQL Server"],
+    "aportes": [
+      "Soporte evolutivo y correctivo de sistemas",
+      "Análisis de incidencias y validación funcional",
+      "Corrección de errores y apoyo en mejoras",
+      "Revisión de código y apoyo técnico",
+      "Soporte a usuarios y capacitación administrativa"
+    ]
+  }
 ]

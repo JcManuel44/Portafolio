@@ -1,21 +1,18 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var options = {
-        strings: ['De Software', 'Backend', 'Web'],
-        typeSpeed: 75, 
-        smartBackspace: true,
-        startDelay: 300, 
-        smartBackspace: true,
-        shuffle: false, 
-        backSpeed: 75,  
-        cursorChar: '|',
-        loopCount: false, 
-        backDelay: 1500, 
-        loop: true, 
-        showCursor: true, 
-        cursorChar: '|',
-        loopCount: false, 
-       
-        contentType: 'html', 
-    };
-    var typed = new Typed('.subtitle-frontPage', options);
+document.addEventListener("DOMContentLoaded", () => {
+    new Typed(".subtitle-frontPage", {
+        strings: [
+            "Java y Spring Boot",
+            "APIs REST",
+            "SQL Server",
+            "integración de servicios",
+            "Docker y AWS"
+        ],
+        typeSpeed: 65,
+        backSpeed: 35,
+        backDelay: 1600,
+        startDelay: 400,
+        loop: true,
+        showCursor: true,
+        cursorChar: "|"
+    });
 });

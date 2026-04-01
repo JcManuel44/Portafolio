@@ -1,42 +1,83 @@
-function enviarMensaje() {
-   emailjs.init('vYFSLmk58NrjMza_t');
+document.addEventListener("DOMContentLoaded", () => {
+    const contactForm = document.getElementById("contact-form");
+    const formStatus = document.getElementById("form-status");
+    const submitButton = document.getElementById("submit-contact-btn");
 
-   var txt_nombre = document.getElementById('id_txt_nombre').value;
-   var txt_empresa = document.getElementById('id_txt_empresa').value;
-   var txt_correo = document.getElementById('id_txt_correo').value;
-   var txt_mensaje = document.getElementById('id_txt_mensaje').value;
+    if (!contactForm || !formStatus || !submitButton) return;
 
-   if (txt_nombre === '' || txt_empresa === '' || txt_correo === '' || txt_mensaje === '') {
-      alert('Por favor, complete todos los campos.');
-      return false;
-   } else {
+    contactForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
 
-      var maxCaracteres_Nombre = 60;
-      var maxCaracteres_Empresa = 70;
-      var maxCaracteres_Correo = 70;
-      var maxCaracteres_Mensaje = 300;
+        const formData = getContactFormData();
+        resetFormStatus(formStatus);
 
-      if (txt_nombre.length > maxCaracteres_Nombre || txt_empresa.length > maxCaracteres_Empresa || txt_correo.length > maxCaracteres_Correo || txt_mensaje.length > maxCaracteres_Mensaje) {
-         alert('Los campos exceden el límite de caracteres.');
-         return false;
-      } else {
-         emailjs.send("service_se3xvqg", "template_fi2thvf", {
-            txt_nombre: txt_nombre,
-            txt_empresa: txt_empresa,
-            txt_correo: txt_correo,
-            txt_mensaje: txt_mensaje
-         }).then(function (response) {
-            alert('Mensaje enviado correctamente');
-            // Limpiar los campos después de enviar el mensaje
-            document.getElementById('id_txt_nombre').value = '';
-            document.getElementById('id_txt_empresa').value = '';
-            document.getElementById('id_txt_correo').value = '';
-            document.getElementById('id_txt_mensaje').value = '';
-         })
-         .catch(function (error) {
-            console.error('Error al enviar el mensaje', error);
-            alert('Error al enviar el mensaje');
-         });
-      }
-   }
+        const validationError = validateContactForm(formData);
+        if (validationError) {
+            showFormStatus(formStatus, validationError, "error");
+            return;
+        }
+
+        setSubmitButtonState(submitButton, true);
+
+        try {
+            await emailjs.send(
+                "service_se3xvqg",
+                "template_fi2thvf",
+                formData,
+                {
+                    publicKey: "vYFSLmk58NrjMza_t"
+                }
+            );
+
+            contactForm.reset();
+            showFormStatus(formStatus, "Mensaje enviado correctamente.", "success");
+        } catch (error) {
+            console.error("Error al enviar el mensaje:", error);
+            showFormStatus(formStatus, "Ocurrió un error al enviar el mensaje.", "error");
+        } finally {
+            setSubmitButtonState(submitButton, false);
+        }
+    });
+});
+
+function getContactFormData() {
+    return {
+        txt_nombre: document.getElementById("id_txt_nombre")?.value.trim() || "",
+        txt_empresa: document.getElementById("id_txt_empresa")?.value.trim() || "",
+        txt_correo: document.getElementById("id_txt_correo")?.value.trim() || "",
+        txt_mensaje: document.getElementById("id_txt_mensaje")?.value.trim() || ""
+    };
+}
+
+function validateContactForm({ txt_nombre, txt_empresa, txt_correo, txt_mensaje }) {
+    if (!txt_nombre || !txt_empresa || !txt_correo || !txt_mensaje) {
+        return "Por favor, completa todos los campos.";
+    }
+
+    const exceedsMaxLength =
+        txt_nombre.length > 60 ||
+        txt_empresa.length > 70 ||
+        txt_correo.length > 70 ||
+        txt_mensaje.length > 500;
+
+    if (exceedsMaxLength) {
+        return "Uno o más campos exceden el límite permitido.";
+    }
+
+    return null;
+}
+
+function resetFormStatus(statusElement) {
+    statusElement.textContent = "";
+    statusElement.className = "form-status";
+}
+
+function showFormStatus(statusElement, message, type) {
+    statusElement.textContent = message;
+    statusElement.classList.add(type);
+}
+
+function setSubmitButtonState(buttonElement, isLoading) {
+    buttonElement.disabled = isLoading;
+    buttonElement.textContent = isLoading ? "Enviando..." : "Enviar mensaje";
 }

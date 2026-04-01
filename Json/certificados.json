@@ -3,54 +3,54 @@
     "id": 1,
     "titulo": "Certificado de Título – Ingeniero en Informática",
     "descripcion": "Ingeniero en Informática titulado en INACAP, con formación en desarrollo de software, gestión de proyectos tecnológicos y aplicación de metodologías de ingeniería. Capacitado para implementar soluciones tecnológicas, diseñar sistemas informáticos y aportar a procesos de transformación digital en organizaciones.",
-    "pdf": "Pdf/Certificado_inacap.pdf"
+    "pdf": "pdf/Certificado_inacap.pdf"
   },
   {
     "id": 2,
     "titulo": "Curso de Java Spring Boot",
     "descripcion": "Curso enfocado en fundamentos y arquitectura de Spring y Spring Boot, abordando su estructura, configuración y componentes clave para el desarrollo de aplicaciones backend modernas.",
-    "pdf": "Pdf/diploma-java-spring-boot.pdf"
+    "pdf": "pdf/diploma-java-spring-boot.pdf"
   },
   {
     "id": 3,
     "titulo": "Curso de Java Spring",
     "descripcion": "Formación práctica en desarrollo backend con Java y Spring Boot. Incluye creación de APIs, controladores, entidades, conexión a bases de datos y uso de herramientas como Spring Initializr y OpenAPI.",
-    "pdf": "Pdf/diploma-java-spring.pdf"
+    "pdf": "pdf/diploma-java-spring.pdf"
   },
   {
     "id": 4,
     "titulo": "Curso Básico de PHP: Instalación, Fundamentos y Operadores",
     "descripcion": "Introducción al lenguaje PHP, incluyendo instalación del entorno, sintaxis básica, variables, constantes y operadores. Aplicación de cálculos y lógica básica en programas PHP.",
-    "pdf": "Pdf/diploma-php.pdf"
+    "pdf": "pdf/diploma-php.pdf"
   },
   {
     "id": 5,
     "titulo": "Desarrollo de Software Seguro",
     "descripcion": "Curso enfocado en buenas prácticas de desarrollo seguro, abordando vulnerabilidades web, principios de seguridad en aplicaciones, ciclo de desarrollo de software seguro (SSDLC) y estrategias para construir sistemas más robustos y protegidos.",
-    "pdf": "Pdf/UC-0ec5a320-0cb4-4779-b16a-ce97f8c7d2c8.pdf"
+    "pdf": "pdf/UC-0ec5a320-0cb4-4779-b16a-ce97f8c7d2c8.pdf"
   },
   {
     "id": 6,
     "titulo": "Introducción a las Pruebas de Software (QA)",
     "descripcion": "Curso introductorio sobre testing de software que aborda conceptos fundamentales, tipos y niveles de prueba, así como el rol del tester en el aseguramiento de la calidad dentro del ciclo de desarrollo.",
-    "pdf": "Pdf/Certificado - Curso de Introducción a las Pruebas de Software (QA).pdf"
+    "pdf": "pdf/Certificado - Curso de Introducción a las Pruebas de Software (QA).pdf"
   },
   {
     "id": 7,
     "titulo": "Curso Profesional de Scrum",
     "descripcion": "Formación en metodología Scrum orientada a maximizar la entrega de valor en proyectos. Incluye roles, ceremonias, artefactos y planificación de sprints para optimizar el trabajo colaborativo en equipos ágiles.",
-    "pdf": "Pdf/diploma-scrum.pdf"
+    "pdf": "pdf/diploma-scrum.pdf"
   },
   {
     "id": 8,
     "titulo": "Curso de Historias de Usuario en Scrum",
     "descripcion": "Curso enfocado en la creación y gestión de Historias de Usuario en entornos Scrum. Aborda su estructura, criterios de aceptación y técnicas de priorización y refinamiento para mejorar la colaboración en equipos ágiles.",
-    "pdf": "Pdf/diploma-historias-usuario-scrum.pdf"
+    "pdf": "pdf/diploma-historias-usuario-scrum.pdf"
   },
   {
     "id": 9,
     "titulo": "Conviértete en Data Analyst",
     "descripcion": "Itinerario formativo enfocado en análisis de datos, que incluye técnicas para extraer, limpiar, analizar y visualizar información con el objetivo de apoyar la toma de decisiones en entornos empresariales.",
-    "pdf": "Pdf/CertificadoDeFinalizacion_Conviertete en data analyst.pdf"
+    "pdf": "pdf/CertificadoDeFinalizacion_Conviertete en data analyst.pdf"
   }
 ]

@@ -2,55 +2,213 @@
   {
     "id": 1,
     "titulo": "Certificado de Título – Ingeniero en Informática",
-    "descripcion": "Ingeniero en Informática titulado en INACAP, con formación en desarrollo de software, gestión de proyectos tecnológicos y aplicación de metodologías de ingeniería. Capacitado para implementar soluciones tecnológicas, diseñar sistemas informáticos y aportar a procesos de transformación digital en organizaciones.",
+    "descripcion": "Ingeniero en Informática titulado en INACAP, con formación en desarrollo de software, bases de datos, análisis de sistemas y gestión de proyectos tecnológicos. Capacitado para diseñar e implementar soluciones tecnológicas orientadas al desarrollo de aplicaciones y transformación digital.",
+    "tecnologias": [
+      "Ingeniería de Software",
+      "Desarrollo Web",
+      "Bases de Datos",
+      "Análisis de Sistemas",
+      "Programación",
+      "Metodologías Ágiles"
+    ],
     "pdf": "pdf/Certificado_inacap.pdf"
   },
   {
     "id": 2,
     "titulo": "Curso de Java Spring Boot",
-    "descripcion": "Curso enfocado en fundamentos y arquitectura de Spring y Spring Boot, abordando su estructura, configuración y componentes clave para el desarrollo de aplicaciones backend modernas.",
+    "descripcion": "Curso orientado al desarrollo de aplicaciones backend modernas utilizando Spring Boot. Incluye configuración de proyectos, arquitectura básica, controladores REST y estructura de aplicaciones empresariales en Java.",
+    "tecnologias": [
+      "Java",
+      "Spring Boot",
+      "REST API",
+      "Maven",
+      "Gradle"
+    ],
     "pdf": "pdf/diploma-java-spring-boot.pdf"
   },
   {
     "id": 3,
     "titulo": "Curso de Java Spring",
-    "descripcion": "Formación práctica en desarrollo backend con Java y Spring Boot. Incluye creación de APIs, controladores, entidades, conexión a bases de datos y uso de herramientas como Spring Initializr y OpenAPI.",
+    "descripcion": "Formación práctica en desarrollo backend con Java y Spring Framework. Incluye creación de APIs REST, controladores, manejo de dependencias, entidades y conexión a bases de datos.",
+    "tecnologias": [
+      "Java",
+      "Spring Framework",
+      "REST API",
+      "OpenAPI",
+      "Bases de Datos"
+    ],
     "pdf": "pdf/diploma-java-spring.pdf"
   },
   {
     "id": 4,
-    "titulo": "Curso Básico de PHP: Instalación, Fundamentos y Operadores",
-    "descripcion": "Introducción al lenguaje PHP, incluyendo instalación del entorno, sintaxis básica, variables, constantes y operadores. Aplicación de cálculos y lógica básica en programas PHP.",
-    "pdf": "pdf/diploma-php.pdf"
+    "titulo": "Curso de Spring Data JPA: Bases de Datos",
+    "descripcion": "Curso enfocado en persistencia de datos y desarrollo backend avanzado con Spring Data JPA y MySQL. Incluye modelado de entidades con Hibernate, relaciones JPA, Query Methods, JPQL, consultas nativas, paginación, transacciones ACID, auditoría, stored procedures y construcción de APIs RESTful.",
+    "tecnologias": [
+      "Java",
+      "Spring Boot",
+      "Spring Data JPA",
+      "Hibernate",
+      "MySQL",
+      "REST API",
+      "JPQL",
+      "Gradle",
+      "JDBC Template",
+      "OpenAPI"
+    ],
+    "pdf": "pdf/diploma-java-spring-data.pdf"
   },
   {
     "id": 5,
-    "titulo": "Desarrollo de Software Seguro",
-    "descripcion": "Curso enfocado en buenas prácticas de desarrollo seguro, abordando vulnerabilidades web, principios de seguridad en aplicaciones, ciclo de desarrollo de software seguro (SSDLC) y estrategias para construir sistemas más robustos y protegidos.",
-    "pdf": "pdf/UC-0ec5a320-0cb4-4779-b16a-ce97f8c7d2c8.pdf"
+    "titulo": "Curso de Java Spring Security: Autenticación y Seguridad Web",
+    "descripcion": "Curso especializado en seguridad de aplicaciones backend con Spring Security. Incluye autenticación y autorización, Basic Authentication, configuración de roles y permisos, integración con bases de datos, control de accesos, filtros personalizados y autenticación JWT con Auth0.",
+    "tecnologias": [
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "JWT",
+      "Auth0",
+      "MySQL",
+      "REST API",
+      "Gradle",
+      "CORS",
+      "CSRF"
+    ],
+    "pdf": "pdf/diploma-java-spring-security.pdf"
   },
   {
     "id": 6,
-    "titulo": "Introducción a las Pruebas de Software (QA)",
-    "descripcion": "Curso introductorio sobre testing de software que aborda conceptos fundamentales, tipos y niveles de prueba, así como el rol del tester en el aseguramiento de la calidad dentro del ciclo de desarrollo.",
-    "pdf": "pdf/Certificado - Curso de Introducción a las Pruebas de Software (QA).pdf"
+    "titulo": "Curso de OWASP Top 10: Riesgos en Aplicaciones",
+    "descripcion": "Curso orientado a la identificación y mitigación de vulnerabilidades web basadas en OWASP Top 10. Incluye análisis de riesgos, buenas prácticas de desarrollo seguro y prevención de vulnerabilidades comunes en aplicaciones.",
+    "tecnologias": [
+      "OWASP Top 10",
+      "Seguridad Web",
+      "Desarrollo Seguro",
+      "Autenticación",
+      "Buenas Prácticas"
+    ],
+    "pdf": "pdf/diploma-owasp-top-10.pdf"
   },
   {
     "id": 7,
-    "titulo": "Curso Profesional de Scrum",
-    "descripcion": "Formación en metodología Scrum orientada a maximizar la entrega de valor en proyectos. Incluye roles, ceremonias, artefactos y planificación de sprints para optimizar el trabajo colaborativo en equipos ágiles.",
-    "pdf": "pdf/diploma-scrum.pdf"
+    "titulo": "Curso de Fundamentos de Criptografía",
+    "descripcion": "Curso enfocado en principios fundamentales de criptografía, cifrado, hashing, integridad de datos y mecanismos utilizados para proteger información en sistemas y aplicaciones.",
+    "tecnologias": [
+      "Criptografía",
+      "Hashing",
+      "Cifrado",
+      "Seguridad de la Información",
+      "Protección de Datos"
+    ],
+    "pdf": "pdf/diploma-fundamentos-criptografia.pdf"
   },
   {
     "id": 8,
-    "titulo": "Curso de Historias de Usuario en Scrum",
-    "descripcion": "Curso enfocado en la creación y gestión de Historias de Usuario en entornos Scrum. Aborda su estructura, criterios de aceptación y técnicas de priorización y refinamiento para mejorar la colaboración en equipos ágiles.",
-    "pdf": "pdf/diploma-historias-usuario-scrum.pdf"
+    "titulo": "Curso de Certificación ISO 27001 para Empresas",
+    "descripcion": "Formación orientada a fundamentos de seguridad de la información y gestión de riesgos basada en la norma ISO 27001. Incluye conceptos relacionados con controles, confidencialidad, integridad y disponibilidad de la información.",
+    "tecnologias": [
+      "ISO 27001",
+      "Seguridad de la Información",
+      "Gestión de Riesgos",
+      "Buenas Prácticas",
+      "Gobernanza TI"
+    ],
+    "pdf": "pdf/diploma-iso-27001.pdf"
   },
   {
     "id": 9,
+    "titulo": "Curso de DLP: Prevención de Pérdida de Datos",
+    "descripcion": "Curso orientado a estrategias y mecanismos de prevención de pérdida de datos (DLP), enfocado en protección de información sensible y reducción de riesgos de exposición de datos.",
+    "tecnologias": [
+      "DLP",
+      "Seguridad de la Información",
+      "Protección de Datos",
+      "Gestión de Riesgos"
+    ],
+    "pdf": "pdf/diploma-dlp.pdf"
+  },
+  {
+    "id": 10,
+    "titulo": "Desarrollo de Software Seguro",
+    "descripcion": "Curso enfocado en buenas prácticas de desarrollo seguro, abordando vulnerabilidades web, principios de seguridad en aplicaciones y estrategias para construir software más robusto y protegido.",
+    "tecnologias": [
+      "Desarrollo Seguro",
+      "OWASP",
+      "Seguridad Web",
+      "SSDLC",
+      "Buenas Prácticas"
+    ],
+    "pdf": "pdf/UC-0ec5a320-0cb4-4779-b16a-ce97f8c7d2c8.pdf"
+  },
+  {
+    "id": 11,
+    "titulo": "Introducción a las Pruebas de Software (QA)",
+    "descripcion": "Curso introductorio sobre testing de software y aseguramiento de calidad. Incluye fundamentos de QA, tipos de pruebas y participación del testing dentro del ciclo de desarrollo de software.",
+    "tecnologias": [
+      "QA",
+      "Testing",
+      "Pruebas Funcionales",
+      "Calidad de Software"
+    ],
+    "pdf": "pdf/Certificado - Curso de Introducción a las Pruebas de Software (QA).pdf"
+  },
+  {
+    "id": 12,
+    "titulo": "Curso Profesional de Scrum",
+    "descripcion": "Curso orientado a fundamentos de Scrum y gestión ágil de proyectos, incluyendo roles, ceremonias, artefactos y planificación iterativa para equipos de desarrollo.",
+    "tecnologias": [
+      "Scrum",
+      "Metodologías Ágiles",
+      "Sprint Planning",
+      "Trabajo Colaborativo"
+    ],
+    "pdf": "pdf/diploma-scrum.pdf"
+  },
+  {
+    "id": 13,
+    "titulo": "Curso de Scrum Master",
+    "descripcion": "Formación enfocada en el rol de Scrum Master y liderazgo de equipos ágiles, facilitando procesos Scrum y mejora continua dentro de proyectos de desarrollo.",
+    "tecnologias": [
+      "Scrum Master",
+      "Scrum",
+      "Agilidad",
+      "Gestión de Equipos"
+    ],
+    "pdf": "pdf/diploma-scrum-master.pdf"
+  },
+  {
+    "id": 14,
+    "titulo": "Curso de Gestión de Equipos Ágiles",
+    "descripcion": "Curso enfocado en coordinación de equipos ágiles, comunicación efectiva y organización colaborativa orientada a entornos de desarrollo de software.",
+    "tecnologias": [
+      "Gestión Ágil",
+      "Scrum",
+      "Trabajo en Equipo",
+      "Liderazgo"
+    ],
+    "pdf": "pdf/diploma-equipos-agiles.pdf"
+  },
+  {
+    "id": 15,
+    "titulo": "Curso de Historias de Usuario en Scrum",
+    "descripcion": "Curso orientado a creación y refinamiento de Historias de Usuario en entornos ágiles, incluyendo criterios de aceptación y priorización funcional.",
+    "tecnologias": [
+      "Scrum",
+      "Historias de Usuario",
+      "Backlog",
+      "Agilidad"
+    ],
+    "pdf": "pdf/diploma-historias-usuario-scrum.pdf"
+  },
+  {
+    "id": 16,
     "titulo": "Conviértete en Data Analyst",
-    "descripcion": "Itinerario formativo enfocado en análisis de datos, que incluye técnicas para extraer, limpiar, analizar y visualizar información con el objetivo de apoyar la toma de decisiones en entornos empresariales.",
+    "descripcion": "Itinerario formativo orientado al análisis de datos, tratamiento de información y generación de insights para apoyo en la toma de decisiones.",
+    "tecnologias": [
+      "Análisis de Datos",
+      "Visualización de Datos",
+      "Procesamiento de Datos",
+      "Data Analytics"
+    ],
     "pdf": "pdf/CertificadoDeFinalizacion_Conviertete en data analyst.pdf"
   }
 ]
